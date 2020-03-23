@@ -1,87 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .btn {
-            border: 2px solid black;
-            background-color: white;
-            color: black;
-            padding: 14px 28px;
-            font-size: 16px;
-            cursor: pointer;
+        .title {
+            position: absolute; left: 5%; font-size: x-large;
         }
 
-        /* Lila */
-        .schmerzen {
-            background-color: #A020F0;
-            color: white;
+        .date {
+            position: absolute; right: 5%; font-size: large;
         }
 
-        .schmerzen:hover {
-            border-color: #A020F0;
-            background-color: white;
-            color: #A020F0;
+        .labeling {
+            position: absolute; top: 45%; font-size: large;
         }
 
-        /* Navy-Blue */
-        .hygiene {
-            background-color: #00308F;
-            color: white;
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+            position: absolute; top: 50%;
         }
 
-        .hygiene:hover {
-            border-color: #00308F;
-            background-color: white;
-            color: #00308F;
-        }
-
-        /* Orange */
-        .medikamente {
-            background-color: #FF7E00;
-            color: white;
-        }
-
-        .medikamente:hover {
-            border-color: #FF7E00;
-            background-color: white;
-            color: #FF7E00;
-        }
-
-        /* Türkis */
-        .nahrungsmittel {
-            background-color: #08E8DE;
-            color: white;
-        }
-
-        .nahrungsmittel:hover {
-            border-color: #08E8DE;
-            background-color: white;
-            color: #08E8DE;
-        }
-
-        /* Grün */
-        .sonstiges {
-            background-color: #8DB600;
-            color: white;
-        }
-
-        .sonstiges:hover {
-            border-color: #8DB600;
-            background-color: white;
-            color: #8DB600;
+        input[type=text]:focus {
+            border: 3px solid #555;
         }
     </style>
 </head>
 <body>
 
-<h1>Hochschule Karlsruhe</h1>
+<p class="title">Hochschule Karlsruhe</p>
 
-<button class="btn schmerzen"><b>Schmerzen</b></button>
-<button class="btn hygiene"><b>Hygiene</b></button>
-<button class="btn medikamente"><b>Medikamente</b></button>
-<button class="btn nahrungsmittel"><b>Nahrungsmittel</b></button>
-<button class="btn sonstiges"><b>Sonstiges</b></button>
+<p class="date">18.03.2020</p>
+
+<p class="labeling">Bettnummer</p>
+
+<form>
+    <input type="text" id="bettnumber" name="bettnumber">
+</form>
 
 </body>
 </html>
